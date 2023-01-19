@@ -6,3 +6,8 @@
 - dependencies
   - minio (version:8.5.1)
   - lombok
+
+## 目录
+
+- src : demo示例目录
+- doc: 文档，包含MinIO环境搭建和demo示例代码说明和注意点

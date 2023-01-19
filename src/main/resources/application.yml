@@ -1,0 +1,12 @@
+# MinIO??
+minio:
+  # ???ip
+  endpoint: http://127.0.0.1:9000
+  # ????ip??
+  fileHost: http://127.0.0.1:9000
+  # bucket???
+  bucket: test
+  # ?????
+  access-key: minioadmin
+  # ????
+  secret-key: minioadmin
