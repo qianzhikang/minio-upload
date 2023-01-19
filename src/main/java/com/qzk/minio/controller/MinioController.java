@@ -20,8 +20,9 @@ public class MinioController {
     @Resource
     private MinioProperties minioProperties;
 
+    @SneakyThrows
     @PostMapping(value = "/upload")
-    public String upload(@RequestParam(name = "file") MultipartFile multipartFile) throws Exception {
+    public String upload(@RequestParam(name = "file") MultipartFile multipartFile) {
         String fileName = multipartFile.getOriginalFilename();
         MinioUtil.createBucket(minioProperties.getBucket());
         MinioUtil.uploadFile(minioProperties.getBucket(), multipartFile, fileName);
